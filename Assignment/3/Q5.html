@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js">
+    </script>
+    <style>
+        #navbar {
+            background-color: dodgerblue;
+            position: fixed;
+            top: -50px;
+            width: 100%;
+            transition: top 0.3s;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: aliceblue;
+            text-align: center;
+            padding: 15px;
+        }
+
+        #navbar a:hover {
+            background-color: rgba(142, 182, 34, 0.568);
+            color: rgb(105, 61, 61);
+        }
+    </style>
+</head>
+
+<body>
+    <p1>Click here to Animate</p1>
+    <button id="btn1">Animate height</button>
+    <button id="btn2">reset height</button>
+    <div id="box" style="background:cyan; height: 100px; width:
+100px; margin: 6px;">
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <button id="btn3">Hide</button>
+    <button id="btn4">Show</button><br>
+    <div id="hs">
+        <p2>Hide And Show</p2>
+    </div>
+    <div id="mm">
+        <p id="mn"> Mouse Enter And Mouse Leave</p>
+    </div> <button id="btn5">Set width</button>
+    <div><img src="download.jfif" height="100px" width="100px"> </div>
+    <p id="dbl">Double Click!!!</p>
+    <p>This is paragraph</p>
+    <p>This is another paragraph</p>
+    <button id="btn6">change the contents of all p elements</button>
+    <p id="22">For Fade in</p>
+    <button id="btn7">FadeOut</button> <button id="btn8">FadeIn</button>
+    <script>
+        window.onscroll = function () { scrollFunction() }; function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+        } $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#box").animate({ height: "300px" });
+            }); $("#btn2").click(function () {
+                $("#box").animate({ height: "100px" });
+            });
+            $("#btn3").click(function () {
+                $("#hs").hide();
+            }); $("#btn4").click(function () {
+                $("#hs").show();
+            });
+            $("#mm").mouseenter(function () {
+                $("#mn").css("background-color", "dodgerblue");
+            }); $("#mm").mouseleave(function () {
+                $("#mn").css("background-color", "yellow");
+            });
+            $("#btn5").click(function () {
+                $("img").attr("width", "200");
+            }); $("#dbl").dblclick(function () {
+                alert("The paragraph was clicked");
+            });
+            $("#btn6").click(function () {
+                $("p").html("hello<b>world!</b>");
+            }); $("#btn7").click(function () {
+                $("#22").fadeOut();
+            });
+            $("#btn8").click(function () {
+                $("#22").fadeIn();
+            });
+        });
+    </script>
+</body>
+
+</html>

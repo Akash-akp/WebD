@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 18rem;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(149, 149, 149);
+            border-radius: 1rem;
+            overflow: hidden;
+            /* padding: 4px; */
+        }
+        .card-body{
+            margin: 1rem;
+        }
+        .card-title{
+            font-weight: 530;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            line-height: 3rem;
+        }
+        .card-text{
+            font-family: sans-serif;
+            line-height: 1.5rem;
+            word-spacing: 1.5px;
+            margin-bottom: 1rem;
+        }
+        .card-button{
+            text-decoration: none;
+            /* border: 1px solid grey; */
+            border-radius: 1rem;
+            padding: 10px 20px; 
+            display: inline-block;
+            /* background-color: rgb(40, 62, 153); */
+            /* color: white; */
+            font-family: sans-serif;
+            font-weight: 550;
+            /* outline design */
+            border: 1px solid rgb(40, 62, 153);
+            color: rgb(40, 62, 153);
+        }
+        .card-button:hover{
+            /* background-color: darkblue; */
+            background-color: rgb(40, 62, 153);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="img/Screenshot 2022-09-07 at 2.27.38 PM.png" alt="" class="cardimg">
+        <div class="card-body">
+            <div class="card-title">Resume</div>
+            <div class="card-text">This is my first project which I build while learning web development. It work awesome in desktop but it is not good in mobile as it is not responsive....</div>
+            <a href="../09.ContinuingWithResume/index.html" class="card-button" target="_blank">Go to Project</a>
+        </div>
+    </div>
+</body>
+</html>

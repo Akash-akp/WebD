@@ -1,0 +1,43 @@
+#container{
+    width: 900px;
+    height: 500px;
+    display: flex;
+    background-color: gray;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#container div{
+    margin: 10px;
+    height: 200px;
+    width: 500px;
+    flex-basis: 250px;
+    min-width: 750px;
+}
+
+#div-1{
+    background-color: red;
+}
+
+#div-2{
+    background-color: green;
+    /* flex-basis: 700px; */
+}
+
+#div-3{
+    background-color: blue;
+}
+
+#div-4{
+    background-color: cyan;
+}
+
+#div-5{
+    background-color: yellow;
+}
+
+#div-6{
+    background-color: blueviolet;
+}

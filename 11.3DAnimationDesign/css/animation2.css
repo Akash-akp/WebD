@@ -1,0 +1,58 @@
+#cube{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 100px;
+    transform-style: preserve-3d;
+    perspective: 10000px;
+    transform: rotateX(25deg) rotateY(-25deg);
+    animation: spin 4s ease-in-out infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(720deg);
+    }
+}
+
+.face{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transition: all 1s;
+}
+
+#one{
+    background-color: skyblue;
+}
+ 
+#two{
+    background-color: orange;
+    transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
+}
+
+#three{
+    background-color: pink;
+    transform: rotateY(-90deg) translateZ(-100px) translateX(100px);
+}
+ 
+#four{
+    background-color: red;
+    transform: translateZ(200px);
+}
+ 
+#five{
+    background-color: green;
+    transform: rotateX(90deg) translateZ(-100px) translateY(100px);
+}
+ 
+#six{
+    background-color: violet;
+    transform: rotateX(90deg) translateZ(100px) translateY(100px);
+}
+ 

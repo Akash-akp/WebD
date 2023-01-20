@@ -1,0 +1,22 @@
+#firstsection{
+    height:5000px;
+}
+
+#secsection{
+    background: url(https://www.w3schools.com/css/img_lights.jpg);
+    height: 5000px;
+}
+
+#viewbox{
+    width: 150px;
+    background-color: white;
+    height: 30px;
+    line-height: 2;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    border-radius: 20px;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+}

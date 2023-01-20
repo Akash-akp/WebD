@@ -1,0 +1,30 @@
+/***************************************TAG SELECTOR***************************************/
+
+/* h1{
+    text-transform: uppercase;
+} */
+
+p:hover{
+    color: grey;
+}
+
+/***************************************CLASS SELECTOR***************************************/
+
+.cursive{
+    font-family: cursive;
+
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+/***************************************ID SELECTOR***************************************/
+
+#heading1{
+    color: rgb(128, 214, 215);
+}

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#click").click(function () {
+                alert("The paragraph was clicked.");
+            });
+            $("#dblclick").dblclick(function () {
+                alert("the paragraph was double-clicked");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="click">Click Me!!!!!!!</p>
+    <p id="dblclick">Click me twice!!!</p>
+    <div id="result"></div>
+</body>
+
+</html>

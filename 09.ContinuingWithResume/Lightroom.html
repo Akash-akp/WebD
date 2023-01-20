@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightroom</title>
+    <style>
+        #lightBox{
+            height: 0px;
+            width: 0px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+            transition: all 2s ease-in-out;
+        }
+        #lightBox:target{
+            height: 300px;
+            width: 300px;
+            background-color: lightgrey;
+            top: 25%;
+            left: 25%;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="#lightBox">LightBox</a>
+    <div id="lightBox">
+        <a href="#">X</a>
+        <p>LightBox Content</p>
+    </div>
+</body>
+</html>

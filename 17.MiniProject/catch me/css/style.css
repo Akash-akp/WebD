@@ -1,0 +1,16 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 6;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}

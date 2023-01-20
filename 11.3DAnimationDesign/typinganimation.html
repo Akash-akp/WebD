@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing animation</title>
+    <style>
+        div h1 {
+            animation:typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
+            overflow: hidden;
+            border-right: .15em solid black;
+            white-space: nowrap;
+            /* margin: 0 auto; */
+            letter-spacing: .15em;
+        }
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: black;
+            }
+        }
+        </style>
+</head>
+
+<body>
+    <div>
+        <h1>I am Akash Kumar Parida</h1>
+    </div>
+</body>
+
+</html>

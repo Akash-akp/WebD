@@ -1,0 +1,89 @@
+#entervaluebox{
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(90deg,skyblue,pink);
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+#subbox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px 200px;
+}
+
+#entervaluebox input{
+    outline: none;
+    padding: 5px;
+    width: 275px; 
+    border: 1px solid lightgrey;
+}
+
+#entervaluebox button{
+    border: 1px solid lightgrey;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: 600; 
+}
+
+#entervaluebox button:hover{
+    box-shadow: 0px 0px 8px 2px grey;
+}
+
+#counterbox{
+    height: 180px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: grey;
+    text-align: center;
+}
+
+#count{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 30%;
+    flex-direction: row-reverse;
+}
+
+.counter{
+    position: relative;
+    top: 62px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    /* color: white; */
+    overflow: hidden;
+}
+
+.counter p{
+    height: 46px;
+    margin: 0px;
+    border: 2px solid black;
+    line-height: 2;
+    width: 46px;
+    font-size: 20px;
+    background-color: white;
+}
+
+p{
+    position: absolute;
+    top: 50px;
+}
+
+.current{
+    top:0px;
+}
+
+.animate{
+    transition: all 0.5s;
+    top:0px;
+}

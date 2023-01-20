@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+    <title>Q10</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></ script >
+            <script> $(document).ready(function(){
+                $("#flip").click(function () {
+                    $("#panel").slideDown("slow");
+                });}); $(document).ready(function(){$("#fl").click(function () {
+                    $("#pa").slideDown("slow");
+                });});
+                $(document).ready(function(){$("#fli").click(function () {
+                    $("#pan").slideDown("slow");
+                });
+});
+                function validateForm() {
+                    let x = document.forms["con"]["fname"].value; if (x == "") {
+                    alert("Name must be filled out");
+                return false;
+  }
+} </script>
+    </script>
+    
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#co">Contact</a></li>
+            <li><a href="#LMA">About</a></li>
+        </ul>
+    </nav>
+    <img src="https://images.unsplash.com/photo-1444703686981- a3abbc4d4fe3?ixlib=rb- 4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=c rop&w=1170&q=80"
+        alt="">
+    <div id="LMA">
+        <h1>About</h1>
+        <div id="flip">Akash Kumar Parida</div>
+        <div id="panel">
+            <ul>
+                <li>PROGRAMMER</li>
+                <li>GAMER</li>
+                <li>STUDENT</li>
+            </ul>
+            </div>
+        </div>
+        <div id="co">
+            <h1>Contact</h1>
+            <form name="con" action="" onsubmit="return validateForm()">
+                <table>
+                    <tr>
+                        <th><label for="Email">Email</label></th>
+                        <th><input type="email"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="name">Name</label></th>
+                        <th> <input type="text" name="fname"></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+/***************************************TAG SELECTOR***************************************/
+
+/***************************************CLASS SELECTOR***************************************/
+
+
+/***************************************ID SELECTOR***************************************/
+#outer-div1{
+    height: 50vh;
+    width: 50vw;
+    /* height: 200px; */
+    /* width: 200px; */
+    background-color: blue;
+    opacity: 0.50;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+    border: 2px solid red;
+    border-radius: 80px;
+    padding: 20px;
+    /* margin: auto; */
+    /* margin: -20px -20px -20px -20px; */
+    margin-bottom: 10px;
+}
+
+#inner-div1{
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+    border: 2px solid red;
+    border-radius: 80px;
+    border-bottom-right-radius: 0px;
+    /* margin: auto; */
+}
+
+#outer-div2{
+    height: 50vh;
+    width: 50vw;
+    background-color: red;
+    border: 2px solid blue;
+    border-radius: 80px;
+    /* margin: auto; */
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+#sample-text{
+    /* border: 2px solid red; */
+    border-left: 2px solid red;
+}
+
+#sample-span{
+    border: 2px solid red;
+}
+
+.div1-2{
+    position: absolute;
+}
+
+#mostouterdiv{
+    border: black solid 2px;
+    padding: 2px;
+    position: relative;
+}

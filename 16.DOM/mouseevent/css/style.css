@@ -1,0 +1,21 @@
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 30px auto;
+}
+
+#outer-div{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+}
+
+#outer-div #inner-div{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    margin: auto;
+    top: 10%;
+}

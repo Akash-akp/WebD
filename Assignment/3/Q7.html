@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        h2 {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0486aa;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .imgcontainer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+            height: auto;
+            text-align: center;
+        }
+
+        .imgcontainer img{
+            width: 100px;
+        }
+
+        .container {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login Form</h2>
+    <form name="form1" onsubmit="return validateForm()">
+        <div class="imgcontainer">
+            <img src="https://akash-akp.github.io/cv/img/akash.jpeg" alt="Avatar"
+                class="avatar" />
+        </div>
+        <div class="container">
+            <span>UserName:</span> <input type="text" id="uname" placeholder="Enter User Name">
+            <span>Email:</span> <input type="email" id="email" placeholder="Enter Email">
+            <span>Mobile no.:</span> <input type="Number" id="phone" placeholder="Enter Number"> <br>
+            <span>Gender:</span> <input type="radio" id="gender" name="gender">Male <input type="radio" name="gender">Female <br> <br>
+            <span>Password:</span> <input type="password" id="psw" placeholder="Enter Password">
+
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+<script>
+    function validateForm() {
+        var a = document.getElementById("uname").value; 
+        var b = document.getElementById("email").value;  
+        var c = document.getElementById("phone").value; 
+        var e = document.getElementById("gender").value; 
+        var f = document.getElementById("psw").value; 
+        if (a == "" || a == null) {
+            alert("Username is Empty");
+        }
+        else if (b == "" || b == null) {
+            alert("Email is Empty");
+        }
+        else if (c == "" || c == null) {
+            alert("Mobile Number is Empty");
+        }
+        else if (e == "" || e == null) {
+            alert("Gender is Empty");
+        }
+        else if (f == "" || f == null) {
+            alert("Password is Empty");
+        } else {
+            alert("Sign Up successful")
+        }
+    }
+</script>
+
+</html>

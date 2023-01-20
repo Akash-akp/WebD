@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js">
+    </script>
+    <style>
+        table,
+        td {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <td>Cell 1 Row 1</td>
+            <td>Cell 2 Row 1</td>
+            <td>Cell 3 Row 1</td>
+        </tr>
+        <tr>
+            <td>Cell 1 Row 2</td>
+            <td>Cell 2 Row 2</td>
+            <td>Cell 3 Row 2</td>
+        </tr>
+    </table>
+    <input type="button" value="Add a row" onclick="addRow()"> <br>
+    <p id="w1">Click the buttton down to change the color</p>
+    <div id="tc">
+        <button id="btn1">Click to change the text color</button>
+    </div>
+    <br><br>
+    <input type="text" placeholder="Text" id="text" value="idText1" height="50px" width="100px"><br>
+    <button onclick="myFunction()">Click Here to remove
+        ids</button>
+    <script> $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#w1").css("color", "blue");
+            });
+        });
+        function myFunction() {
+            let txt = document.getElementById("text").value;
+            const element = document.getElementById(txt);
+            element.remove();
+        }
+        function addRow() {
+            var root = document.getElementById('table').getElementsByTagName('tbody')[0];
+            var rows = root.getElementsByTagName('tr'); 
+            var clone = cloneEl(rows[rows.length - 1]); 
+            root.appendChild(clone);
+        }
+        function cloneEl(el) {
+            var clo = el.cloneNode(true); return clo;
+        } </script>
+</body>
+
+</html>
